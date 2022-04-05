@@ -597,13 +597,9 @@ background-color: var(--special-bgd-color);
 /*-------------------------- Page Portfolio styles --------------------------*/
 /*-------------------------- Page Portfolio styles --------------------------*/
 
-.portfolio.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 /* buttons style */
-.buttons.list {
+.buttons {
   display: flex;
   justify-content: center;
 
@@ -637,17 +633,17 @@ background-color: var(--special-bgd-color);
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.buttons .item:not(:last-child) {
+.buttons__item:not(:last-child) {
   margin-right: 8px;
 }
 
 /*------- Projects list -------*/
-.projects.list {
+.projects {
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-title {
+.projects__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -657,13 +653,13 @@ background-color: var(--special-bgd-color);
   color: var(--primary-text-color);
 }
 
-.projects .text {
+.projects__category {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
 }
 
-.projects .project-link {
+.projects__link {
   display: block;
   width: 100%;
 
@@ -671,37 +667,37 @@ background-color: var(--special-bgd-color);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-item {
+.projects__item {
   width: calc((100% - 60px) / 3);
   border: 1px solid var(--secondary-border-color);
   background-color: var(--primary-bgd-color);
 }
 
-.projects .project-link:hover,
-.projects .project-link:focus {
+.projects__link:hover,
+.projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-item:not(:nth-child(3n)) {
+.projects__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.project-item:not(:nth-child(n + 7)) {
+.projects__item:not(:nth-child(n + 7)) {
   margin-bottom: 30px;
 }
 
-.projects .sign {
+.projects__info {
   padding: 20px 24px;
 }
 
-.projects .img {
+.projects__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.project-thumb {
+.projects__thumb {
   position: relative;
 
   width: 100%;
@@ -725,8 +721,8 @@ background-color: var(--special-bgd-color);
   transform: translateY(100%);
 }
 
-.project-link:hover .hidden-text,
-.project-link:focus .hidden-text {
+.projects__link:hover .hidden-text,
+.projects__link:focus .hidden-text {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
