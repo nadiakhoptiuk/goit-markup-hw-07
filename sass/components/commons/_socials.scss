@@ -32,6 +32,8 @@
     height: 20px;
     fill: $socialIconFill;
 
+    @include transitioned(fill);
+
     .socials__link:hover &,
     .socials__link:focus & {
         fill: $primaryBgdColor;
