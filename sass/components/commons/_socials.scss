@@ -1,3 +1,4 @@
+/* Socials in team section */
 .socials {
     display: flex;
     padding: 0;
@@ -38,4 +39,16 @@
     .socials__link:focus & {
         fill: $primaryBgdColor;
     }
+}
+
+
+/* Socials in footer */
+.socials__icon--footer {
+    fill: $primaryBgdColor;
+}
+
+.socials__link--footer {
+    background-color: $socialFooterBgdColor;
+
+    @include transitioned(background-color);
 }

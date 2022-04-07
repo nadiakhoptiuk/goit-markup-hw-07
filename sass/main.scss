@@ -9,6 +9,7 @@
 @import "./components/nav";
 @import "./components/contacts";
 
+// Studio Page
 @import "./components/hero";
 @import "./components/commons/button";
 
@@ -20,3 +21,18 @@
 @import "./components/commons/socials";
 
 @import "./components/clients";
+
+@import "./components/footer";
+@import "./components/address";
+@import "./components/join";
+@import "./components/subscribe";
+
+// Portfolio Page
+@import "./components/portfolio";
+@import "./components/buttons-portfolio";
+@import "./components/projects";
+
+// Modal Window
+@import "./components/backdrop";
+@import "./components/modal";
+@import "./components/form";
